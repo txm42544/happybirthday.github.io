@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Surprise</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-image: url('https://scontent.fhan5-2.fna.fbcdn.net/v/t39.30808-6/449215033_791335219792323_5278153672357546066_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=63RjKSpmrfsQ7kNvgHPIBMZ&_nc_ht=scontent.fhan5-2.fna&oh=00_AYCBQBGNnw_auy-j9_9cNqzkAMgeRt1AIf1FZniiCcwkwA&oe=669283E6'); /* Đường dẫn tới hình nền */
+            background-size: cover; /* Đảm bảo hình nền bao phủ toàn bộ */
+            background-position: center; /* Căn chỉnh hình nền vào giữa trang */
+            background-repeat: no-repeat; /* Không lặp lại hình nền */
+        }
+        h1 {
+            color: #FF69B4;
+        }
+        .gift-icon {
+            font-size: 100px;
+            color: #FF69B4;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #FF69B4;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+        }
+        .link {
+            font-size: 20px;
+            color: #FF69B4;
+            text-decoration: none;
+        }
+        /* Để giữ cho nội dung ở giữa màn hình */
+        .content {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Màu nền cho nội dung */
+            border-radius: 10px; /* Bo góc cho nội dung */
+            display: inline-block; /* Hiển thị làm khối nội dung */
+        }
+    </style>
+</head>
+<body>
+    <div class="content" id="birthdayMessage">
+        <h1>Chúc mừng sinh nhật Bảo Thy!</h1>
+        <p>Ấn Tiếp tục để nhận quà đi cu =)))))))</p>
+        <button class="button" onclick="showGiftPage()">Tiếp Tục</button>
+    </div>
+
+    <div class="content" id="giftPage" style="display: none;">
+        <i class="gift-icon">🎁🎁🎁</i>
+        <p>Nghe nhạc zui dẻ nha ^_^</p>
+        <a class="link" href="https://drive.google.com/drive/folders/1hkqtQfQsO-dyFvpA6eZkScBT5uyolFrv" target="_blank">Mở quà ngay!</a>
+    </div>
+
+    <script>
+        function showGiftPage() {
+            document.getElementById('birthdayMessage').style.display = 'none';
+            document.getElementById('giftPage').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
